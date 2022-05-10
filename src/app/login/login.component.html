@@ -1,0 +1,44 @@
+<mat-card>
+  <mat-card-title>Login</mat-card-title>
+  <mat-card-content>
+    <form [formGroup]="loginForm">
+      <p>
+        <mat-form-field>
+          <input
+            type="text"
+            matInput
+            placeholder="Username"
+            formControlName="username"
+          />
+        </mat-form-field>
+      </p>
+      <p
+        *ngIf="
+          _loginForm['username'].hasError('required') &&
+          (_loginForm['username'].touched || isSubmitted)
+        "
+        class="error"
+      >
+        Please enter the username
+      </p>
+      <p>
+        <mat-form-field>
+          <input
+            type="password"
+            matInput
+            placeholder="Password"
+            formControlName="password"
+          />
+        </mat-form-field>
+      </p>
+      <span *ngIf="_loginForm['password'].touched || isSubmitted">
+        <p *ngIf="_loginForm['password'].hasError('required')" class="error">
+          Please enter the Password
+        </p>
+      </span>
+      <div class="button">
+        <button (click)="onLogin()" mat-button>Login</button>
+      </div>
+    </form>
+  </mat-card-content>
+</mat-card>

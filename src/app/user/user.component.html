@@ -1,0 +1,33 @@
+<div>
+  <a
+    mat-button
+    color="primary"
+    [routerLink]="['/users/add-user']"
+    routerLinkActive="router-link-active"
+    >Add User</a
+  >
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Email</th>
+        <th scope="col">Mobile</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of users">
+        <td>{{ user.name }}</td>
+        <td>{{ user.email }}</td>
+        <td>{{ user.phone }}</td>
+        <td>
+          <i class="material-icons delete" (click)="onDeleteUser(user)"
+            >delete</i
+          >
+          <i class="material-icons edit" (click)="editUser(user)">edit</i>
+          <i class="material-icons" (click)="viewUser(user)">View</i>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

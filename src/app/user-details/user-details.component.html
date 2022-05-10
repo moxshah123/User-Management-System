@@ -1,0 +1,20 @@
+<mat-card class="example-card" *ngIf="user">
+  <mat-card-title>{{ user.name }}</mat-card-title>
+  <mat-card-content>
+    <p>Username: {{ user.username }}</p>
+    <p>Email: {{ user.email }}</p>
+    <p>Mobile: {{ user.phone }}</p>
+  </mat-card-content>
+  <mat-divider inset></mat-divider>
+  <mat-card-actions>
+    <button mat-raised-button color="primary" (click)="editUser()">Edit</button>
+    <button
+      mat-raised-button
+      color="primary"
+      *ngIf="isAdmin == 'true'"
+      [routerLink]="['/users']"
+    >
+      Back to list
+    </button>
+  </mat-card-actions>
+</mat-card>

@@ -1,0 +1,49 @@
+{
+  "users": [
+    {
+      "id": 7,
+      "email": "Telly.Hoeger@billy.biz",
+      "name": "Kurtis Weissnat",
+      "username": "Elwyn.Skiles",
+      "phone": "8998899889",
+      "isAdmin": false,
+      "password": ""
+    },
+    {
+      "id": 8,
+      "email": "Sherwood@rosamond.me",
+      "name": "Nicholas Runolfsdottir V",
+      "username": "Maxime_Nienow",
+      "phone": "8999888999",
+      "isAdmin": false,
+      "password": "user@123"
+    },
+    {
+      "id": 9,
+      "name": "Glenna Reichert",
+      "username": "Delphine",
+      "email": "Chaim_McDermott@dana.io",
+      "password": "user@123",
+      "isAdmin": false,
+      "phone": "(775)976-6794 x41206"
+    },
+    {
+      "id": 10,
+      "name": "Clementina DuBuque",
+      "username": "Moriah.Stanton",
+      "email": "Rey.Padberg@karina.biz",
+      "password": "user@123",
+      "isAdmin": true,
+      "phone": "024-648-3804"
+    },
+    {
+      "id": 11,
+      "email": "mox@mail.com",
+      "name": "Mox",
+      "username": "mox",
+      "phone": "9999999999",
+      "isAdmin": false,
+      "password": ""
+    }
+  ]
+}
